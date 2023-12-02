@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_welcome"
+        android:textColor="@color/yellow"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cherrybomb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_deskripsi_welcome"
+        android:textColor="@color/grey"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cherrybomb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <Button
+            android:id="@+id/ed_login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/cherrybomb"/>
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/cherrybomb"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

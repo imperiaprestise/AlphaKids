@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">AlphaKids</string>
+    <string name="text_welcome">Welcome at AlphaKids! </string>
+    <string name="text_deskripsi_welcome">Discover, Learn, and Grow with Our Supportive Community.</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="ready">Ready to learn with us?</string>
+    <string name="enter">Enter your data first!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="complete">Complete your data below</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="instruction">Instruction for Use</string>
+    <string name="text_instruction">To use this application, simply press "Start Scan," then point the camera at the image from which you want to detect letters</string>
+    <string name="start">Start</string>
 </resources>
