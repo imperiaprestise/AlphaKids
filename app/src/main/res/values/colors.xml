@@ -5,4 +5,5 @@
     <color name="yellow">#FFA620</color>
     <color name="grey">#888888</color>
     <color name="soft_green">#0C9390</color>
+    <color name="shrine_theme_light_onSurfaceVariant">#3DE7E3</color>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/title_home"
+        android:fontFamily="@font/cherrybomb" />
+    <item
+        android:id="@+id/navigation_write"
+        android:icon="@drawable/baseline_create_24"
+        android:title="@string/title_write" />
+    <item
+        android:id="@+id/navigation_book"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="@string/title_book" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/title_profile" />
+
+</menu>
