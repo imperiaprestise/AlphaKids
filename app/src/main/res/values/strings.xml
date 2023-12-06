@@ -26,4 +26,43 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="detected_text">Detected Text</string>
+
+    <string name="book_name">Buku Cerita Anak</string>
+    <string name="description">Deskripsi</string>
+
+    <string-array name="data_book">
+        <item>Kalah Oleh Si Cerdik</item>
+        <item>5 Dongeng Anak Dunia</item>
+        <item>Si Gagak dan Elang yang Jahil</item>
+        <item>Kesederhanaan Semut</item>
+    </string-array>
+
+    <string-array name="data_deskripsi">
+        <item>Di sebuah hutan ada sumber air yang tidak pernah kering. Airnya jernih dan mengalir ke sebuah telaga. Semua binatang yang menjadi
+            warga di hutan itu minum dari sumber air sama. Setiap golongan binatang sudah mempunyai jadwal tidak tertulis untuk bergiliran minum.
+        Pada saat itu kebetulan musim kemarau. Semua binatang merasa sangat haus, tetapi tidak ada yang berani minum di luar jadwalnya.
+        Semua binatang taat pada aturan.Pada Suatu pagi yang cerah banyak binatang menuju sumber air. Sesampainya di pinggir telaga mereka tidak mau turun. Airnya
+        kotor karena digunakan untuk berkubang oleh seekor badak</item>
+
+        <item>Di daerah perbukitan Pulau Jawa, terdapat kumpulan tupai pemakan buah kelapa. Para tupai jantan memiliki kegemaran unik yaitu meloncat dari ranting pohon ke
+            ranting pohon lainnya. Sementara para tupai betina lebih suka merayap. Mereka tidak berani untuk meloncat. Tetapi berbeda dengan Tuah, tupai betina si pantang menyerah. Dia ingin
+        sekali dapat meloncat. Oleh karena itu, Tuah mendatangi Eyang Tupai. Beliau adalah pelatih yang selama ini mengajari para tupai jantan meloncat.
+        “Eyang, jadikanlah aku muridmu seperti para tupai jantan itu,” pinta Tuah. “Kamu perempuan, sudahlah tidak perlu kamu susah payah berlatih loncat padaku,” jawab Eyang Tupai. </item>
+
+        <item>Di hutan yang riuh, tinggalah dua sahabat, Si Gagak dan Elang. Mereka dikenal karena kejahilan mereka yang tak terduga. Suatu pagi, Gagak ingin memberi kejutan pada Elang. Dengan berani,
+            Gagak memenuhi sarang Elang dengan suara gemuruh mengerikan. Elang terbangun kaget, tapi keduanya tertawa bersama. Tidak mau kalah, Elang merencanakan kejutan balasannya. Beberapa hari kemudian,
+            Elang mencubit lembut ekor Gagak. Gagak terbang ke udara, dan mereka tertawa bersama lagi. Mereka menyadari bahwa kejahilan kecil membuat hidup lebih ceria. Si Gagak dan Elang yang jahil tetap
+            menjadi sahabat penuh tawa di hutan itu.</item>
+
+        <item>Di hutan, semut bijak hidup dengan sederhana. Meski mendengar tentang perburuan makanan besar-besaran, mereka tetap setia pada prinsip kesederhanaan. Berkumpul di sekitar makanan kecil, mereka
+            merasa bahagia dan saling berbagi dengan tulus. Berita tentang kesederhanaan mereka menyebar, mengajar hewan lain bahwa kebahagiaan sejati tak terletak pada kekayaan. Semut bijak membawa kedamaian
+            dan kebahagiaan ke hutan, mengajarkan bahwa hidup berkelimpahan bukan hanya tentang hal besar, tetapi juga menghargai setiap momen kecil dan sederhana.</item>
+    </string-array>
+
+    <integer-array name="data_gambar">
+        <item>@drawable/img_1</item>
+        <item>@drawable/img_2</item>
+        <item>@drawable/bukudongen</item>
+        <item>@drawable/dongeng</item>
+    </integer-array>
 </resources>

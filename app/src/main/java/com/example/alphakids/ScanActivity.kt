@@ -28,6 +28,7 @@ class ScanActivity : AppCompatActivity() {
         }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         requestPermissionLauncher.launch(Manifest.permission.CAMERA)

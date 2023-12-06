@@ -1,35 +1,32 @@
-package com.example.alphakids.view
+package com.example.alphakids.view.books
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.alphakids.R
-import com.example.alphakids.ScanActivity
-import com.example.alphakids.databinding.FragmentHomeBinding
+import com.example.alphakids.databinding.FragmentBookBinding
 import com.example.alphakids.view.adapter.ListBookAdapter
-import com.example.alphakids.view.books.Books
 
 
-class HomeFragment : Fragment() {
+class BookFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentBookBinding? = null
+
     private val binding get() = _binding!!
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return binding.root    }
+        // Inflate the layout for this fragment
+        _binding = FragmentBookBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val bookNames = resources.getStringArray(R.array.data_book)
         val bookDescriptions = resources.getStringArray(R.array.data_deskripsi)
         val bookImages = resources.obtainTypedArray(R.array.data_gambar)
@@ -51,19 +48,6 @@ class HomeFragment : Fragment() {
         // Recycle the typed array
         bookImages.recycle()
 
-        binding.buttonScan.setOnClickListener {
-            // Navigate to ScanActivity
-            navigateToScanActivity()
-        }
     }
 
-    private fun navigateToScanActivity() {
-        val intent = Intent(activity, ScanActivity::class.java)
-        startActivity(intent)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null
-    }
 }
