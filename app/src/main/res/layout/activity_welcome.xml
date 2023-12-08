@@ -36,26 +36,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp">
+        android:layout_marginTop="20dp">
 
         <Button
             android:id="@+id/ed_login"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/login"
             android:backgroundTint="@color/yellow"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/cherrybomb"/>
 
         <Button
             android:id="@+id/sign_up"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/signup"
             android:backgroundTint="@color/yellow"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
             android:fontFamily="@font/cherrybomb"/>
 
     </LinearLayout>

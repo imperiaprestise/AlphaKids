@@ -9,7 +9,7 @@
     <string name="enter">Enter your data first!</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="name">Name</string>
+    <string name="name">Username</string>
     <string name="complete">Complete your data below</string>
     <string name="welcome_to">Welcome to</string>
     <string name="instruction">Instruction for Use</string>
