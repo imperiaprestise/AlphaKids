@@ -1,4 +1,4 @@
-package com.example.alphakids
+package com.example.alphakids.view.main
 
 import android.content.Intent
 import android.os.Build
@@ -12,6 +12,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.alphakids.R
+import com.example.alphakids.WelcomeActivity
 import com.example.alphakids.databinding.ActivityMainBinding
 import com.example.alphakids.view.ViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -31,7 +33,10 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         val appBarConfiguration = AppBarConfiguration.Builder(
-            R.id.navigation_home, R.id.navigation_write, R.id.navigation_book, R.id.navigation_profile
+            R.id.navigation_home,
+            R.id.navigation_write,
+            R.id.navigation_book,
+            R.id.navigation_profile
         ).build()
 
         // Cek null pada ActionBar sebelum mengatur konfigurasi
@@ -45,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.getSession().observe(this){user ->
             Log.d("MainActivity", "user is logged in: ${user.isLogin} ")
             if (!user.isLogin){
-                Log.d("MainActivity", "Starting WelcomeActivity")
+                Log.d("MainActivity", "user info: ${user.email}")
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             }

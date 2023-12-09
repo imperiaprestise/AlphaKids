@@ -25,7 +25,7 @@ class Repository(private val apiService: ApiService, private val userPreference:
         return apiService.register(username, email, password)
     }
 
-    suspend fun login(email: String, password: String): LoginResponsee{
-        return apiService.login(email, password)
+    suspend fun login(username: String, password: String): LoginResponsee{
+        return apiService.login(username, password)
     }
 }

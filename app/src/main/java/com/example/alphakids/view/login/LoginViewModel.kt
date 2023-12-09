@@ -20,6 +20,9 @@ class LoginViewModel(private val repository: Repository): ViewModel() {
     private val _loginResponse = MutableLiveData<LoginResponsee?>()
     val loginResponse: LiveData<LoginResponsee?> = _loginResponse
 
+    private val _loggedInUser = MutableLiveData<UserModel?>()
+    val loggedInUser: LiveData<UserModel?> = _loggedInUser
+
     val errorMessage = MutableLiveData<String?>()
 
     fun login(email: String, password: String) {
@@ -47,6 +50,11 @@ class LoginViewModel(private val repository: Repository): ViewModel() {
         Log.d("LoginViewModel", "Saving session for user: $user")
         viewModelScope.launch {
             repository.saveSession(user)
+            _loggedInUser.postValue(user)
+            Log.d("LoginViewModel", "Session saved: ${_loggedInUser.value}")
+
+            val email = user.email
+            Log.d("LoginViewModel", "Username: $email")
         }
     }
 }

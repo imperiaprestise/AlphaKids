@@ -18,6 +18,7 @@ class UserPreference(private val dataStore: DataStore<Preferences>) {
         dataStore.edit{ preferences ->
             preferences[EMAIL_KEY] = user.email
             preferences[TOKEN_KEY] = user.token
+            preferences[DATE_KEY] = user.dateJoined
             preferences[IS_LOGIN_KEY] = true
         }
     }
@@ -27,6 +28,7 @@ class UserPreference(private val dataStore: DataStore<Preferences>) {
             UserModel(
                 preferences[EMAIL_KEY] ?: "",
                 preferences[TOKEN_KEY] ?: "",
+                preferences[DATE_KEY] ?: "",
                 preferences[IS_LOGIN_KEY] ?: false
             )
         }
@@ -49,8 +51,10 @@ class UserPreference(private val dataStore: DataStore<Preferences>) {
         @Volatile
 
         private var INSTANCE: UserPreference? = null
+
         private val EMAIL_KEY = stringPreferencesKey("email")
         private val TOKEN_KEY = stringPreferencesKey("token")
+        private val DATE_KEY = stringPreferencesKey("dateJoin")
         private val IS_LOGIN_KEY = booleanPreferencesKey("isLogin")
 
         fun getInstance(dataStore: DataStore<Preferences>) : UserPreference{

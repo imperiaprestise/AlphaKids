@@ -3,7 +3,7 @@ package com.example.alphakids.view
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.alphakids.MainViewModel
+import com.example.alphakids.view.main.MainViewModel
 import com.example.alphakids.data.Repository
 import com.example.alphakids.di.Injection
 import com.example.alphakids.view.login.LoginViewModel
@@ -23,6 +23,7 @@ class ViewModelFactory(private val repository: Repository): ViewModelProvider.Ne
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(repository) as T
             }
+
             else -> throw IllegalArgumentException("Unknown viewmodel class" + modelClass.name)
         }
     }

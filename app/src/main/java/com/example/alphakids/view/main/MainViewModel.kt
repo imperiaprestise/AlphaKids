@@ -1,4 +1,4 @@
-package com.example.alphakids
+package com.example.alphakids.view.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
