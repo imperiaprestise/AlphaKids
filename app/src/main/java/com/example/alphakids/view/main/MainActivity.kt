@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.getSession().observe(this){user ->
             Log.d("MainActivity", "user is logged in: ${user.isLogin} ")
             if (!user.isLogin){
-                Log.d("MainActivity", "user info: ${user.email}")
+                Log.d("MainActivity", "user info: ${user.username}")
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             }

@@ -10,6 +10,9 @@ import com.example.alphakids.data.pref.UserModel
 import kotlinx.coroutines.launch
 
 class MainViewModel(private val repository: Repository) : ViewModel() {
+
+    private val _userModel = MutableLiveData<UserModel>()
+    val userModel: LiveData<UserModel> = _userModel
     fun getSession(): LiveData<UserModel>{
         return repository.getSession().asLiveData()
     }

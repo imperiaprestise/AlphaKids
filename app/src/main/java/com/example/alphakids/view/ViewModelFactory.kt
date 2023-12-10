@@ -7,6 +7,7 @@ import com.example.alphakids.view.main.MainViewModel
 import com.example.alphakids.data.Repository
 import com.example.alphakids.di.Injection
 import com.example.alphakids.view.login.LoginViewModel
+import com.example.alphakids.view.profile.ProfileViewModel
 import com.example.alphakids.view.signup.SignupViewModel
 
 class ViewModelFactory(private val repository: Repository): ViewModelProvider.NewInstanceFactory() {
@@ -23,7 +24,9 @@ class ViewModelFactory(private val repository: Repository): ViewModelProvider.Ne
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(repository) as T
             }
-
+            modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
+                ProfileViewModel(repository) as T
+            }
             else -> throw IllegalArgumentException("Unknown viewmodel class" + modelClass.name)
         }
     }

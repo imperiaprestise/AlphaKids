@@ -84,7 +84,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun updateUI(user: UserModel){
-        val greetingMessage = "Hi, ${user.email}" // Gantilah dengan username atau email yang sesuai
+        val greetingMessage = "Hi, ${user.username}" // Gantilah dengan username atau email yang sesuai
         usernameTextView.text = greetingMessage    }
 
     private fun navigateToScanActivity() {

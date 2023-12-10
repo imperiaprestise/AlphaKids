@@ -28,7 +28,7 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.alphakids.view.ProfileFragment"
+        android:name="com.example.alphakids.view.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile"/>
 

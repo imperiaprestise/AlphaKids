@@ -23,7 +23,7 @@ data class Data(
 	val v: Int? = null,
 
 	@field:SerializedName("id")
-	val id: String? = null,
+	val id: String,
 
 	@field:SerializedName("email")
 	val email: String? = null,

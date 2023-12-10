@@ -30,6 +30,8 @@
     <string name="book_name">Buku Cerita Anak</string>
     <string name="description">Deskripsi</string>
     <string name="hi">Hi</string>
+    <string name="help">Help</string>
+    <string name="perlu_bantuan">Perlu Bantuan atau Ada masalah?</string>
 
     <string-array name="data_book">
         <item>Kalah Oleh Si Cerdik</item>

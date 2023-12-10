@@ -25,11 +25,11 @@ class LoginViewModel(private val repository: Repository): ViewModel() {
 
     val errorMessage = MutableLiveData<String?>()
 
-    fun login(email: String, password: String) {
+    fun login(username: String, password: String) {
         viewModelScope.launch {
             try {
                 _isLoadingLogin.value = true
-                val response = repository.login(email, password)
+                val response = repository.login(username, password)
                 Log.d("LoginViewModel", "Response : ${response.data}")
                 _isLoadingLogin.value = false
                 _loginResponse.postValue(response)
@@ -53,8 +53,8 @@ class LoginViewModel(private val repository: Repository): ViewModel() {
             _loggedInUser.postValue(user)
             Log.d("LoginViewModel", "Session saved: ${_loggedInUser.value}")
 
-            val email = user.email
-            Log.d("LoginViewModel", "Username: $email")
+            val username = user.username
+            Log.d("LoginViewModel", "Username: $username")
         }
     }
 }

@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var userPreference: UserPreference
 
-    private lateinit var email: String // Declare email variable here
+    private lateinit var username: String // Declare email variable here
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,12 +69,12 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupAction(){
         binding.loginButton.setOnClickListener {
-            email = binding.usernameEditText.text.toString()
+            username = binding.usernameEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
-            loginViewModel.login(email, password)
+            loginViewModel.login(username, password)
             ViewModelFactory.clearInstance()
-            loginViewModel.saveSession(UserModel(email,"",""))
+            loginViewModel.saveSession(UserModel(username,"",""))
         }
 
         loginViewModel.isLoadingLogin.observe(this) { isLoading ->
