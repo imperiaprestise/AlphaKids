@@ -7,17 +7,17 @@
     tools:context=".view.profile.ProfileFragment"
     android:background="@drawable/background_app">
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:layout_width="115dp"-->
-<!--        android:layout_height="115dp"-->
-<!--        android:id="@+id/iv_profile"-->
-<!--        android:layout_marginTop="80dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:src="@drawable/fotoimperiaa"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_profile"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        tools:src="@drawable/fotoimperiaa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tv_name"
@@ -26,13 +26,13 @@
         android:text="Imperia Prestise Sinaga"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:textSize="22sp"
         android:fontFamily="@font/cherrybomb"
         android:textColor="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/iv_profile"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,36 +77,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_joined"/>
 
-    <include
-        android:id="@+id/item_bantuan"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/tv_emaill"
+        android:text="Email"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/cherrybomb"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_datejoined"
-        android:layout_marginTop="20dp"
-        layout="@layout/item_list_profile_menu"/>
-    <include
-        android:id="@+id/item_about_app"
+        app:layout_constraintTop_toBottomOf="@id/tv_joined"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/tv_detailemail"
+        android:text="email@gmail.com"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/cherrybomb"
+        android:textColor="@color/soft_green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_bantuan"
-        layout="@layout/item_list_profile_menu"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_emaill"/>
+
+
+    <Button
+        android:id="@+id/bantuanButton"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detailemail"
+        android:fontFamily="@font/cherrybomb"/>
 
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/soft_green"
         android:text="@string/logout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_about_app"
+        app:layout_constraintTop_toBottomOf="@id/bantuanButton"
         android:fontFamily="@font/cherrybomb"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

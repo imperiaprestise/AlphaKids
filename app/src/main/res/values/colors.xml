@@ -7,4 +7,21 @@
     <color name="grey">#888888</color>
     <color name="soft_green">#0C9390</color>
     <color name="shrine_theme_light_onSurfaceVariant">#3DE7E3</color>
+
+    <color name="primary">#FFA620</color>
+<!--    <color name="primaryVariant">#263A29</color>-->
+    <color name="primaryContainer">#F8B248</color>
+<!--    <color name="onPrimaryContainer">#00210D</color>-->
+
+    <color name="secondary">#A63B01</color>
+    <color name="secondaryContainer">#28ACA9</color>
+    <color name="onSecondaryContainer">#370E00</color>
+
+    <color name="surface">#FF3DE7E3</color>
+    <color name="surfaceVariant">#DDE5DB</color>
+    <color name="surfaceContainer">#FF3DE7E3</color>
+    <color name="onSurface">#2F1400</color>
+    <color name="onSurfaceVariant">#414941</color>
+
+
 </resources>

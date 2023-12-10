@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
 
             loginViewModel.login(username, password)
             ViewModelFactory.clearInstance()
-            loginViewModel.saveSession(UserModel(username,"",""))
+            loginViewModel.saveSession(UserModel(username,"","", ""))
         }
 
         loginViewModel.isLoadingLogin.observe(this) { isLoading ->
@@ -92,6 +92,13 @@ class LoginActivity : AppCompatActivity() {
                     it.data?.token?.let{ token ->
                         lifecycle.coroutineScope.launch {
                             userPreference.saveToken(token)
+                            val username = it.data?.username
+                            val dateJoined = it.data?.date
+                            val token = it.data?.token
+                            val email = it.data?.email
+
+                            val user = UserModel(username ?: "", token ?: "", dateJoined ?: "", email ?: "")
+                            userPreference.saveSession(user)
                             Log.d("LoginActivity", "Token saved: $token")
                         }
                         showUserCreated(true, it)
