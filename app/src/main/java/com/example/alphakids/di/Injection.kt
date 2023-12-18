@@ -1,6 +1,7 @@
 package com.example.alphakids.di
 
 import android.content.Context
+import com.example.alphakids.data.PredictRepository
 import com.example.alphakids.data.Repository
 import com.example.alphakids.data.pref.UserPreference
 import com.example.alphakids.data.pref.dataStore
@@ -15,5 +16,10 @@ object Injection {
         val user = runBlocking { userPreference.getSession().first() }
         val apiService = ApiConfig.getApiService(user.token)
         return Repository(apiService, userPreference)
+    }
+
+    fun providePredictRepository(context: Context): PredictRepository{
+        val apiService = ApiConfig.getPredictApiService()
+        return PredictRepository(apiService)
     }
 }

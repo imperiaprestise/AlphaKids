@@ -1,5 +1,6 @@
 package com.example.alphakids.view.profile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,6 +19,7 @@ import com.example.alphakids.data.pref.dataStore
 import com.example.alphakids.data.util.createCustomDrawable
 import com.example.alphakids.databinding.FragmentProfileBinding
 import com.example.alphakids.view.ViewModelFactory
+import com.example.alphakids.view.help.HelpActivity
 import com.example.alphakids.view.main.MainViewModel
 import kotlinx.coroutines.launch
 
@@ -65,6 +67,10 @@ class ProfileFragment : Fragment() {
         logoutButton.setOnClickListener {
             mainViewModel.logout()
         }
+
+        binding.bantuanButton.setOnClickListener {
+            navigateToHelpActivity()
+        }
     }
 
     private fun updateUI(user: UserModel) {
@@ -80,6 +86,11 @@ class ProfileFragment : Fragment() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+    }
+
+    private fun navigateToHelpActivity(){
+        val intent = Intent(activity, HelpActivity::class.java)
+        startActivity(intent)
     }
 
 

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
 
     <application
         android:allowBackup="true"
@@ -18,10 +22,16 @@
         android:theme="@style/Theme.AlphaKids"
         tools:targetApi="31">
         <activity
+            android:name=".view.scan.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.help.HelpActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ScanActivity"
+            android:name=".view.scan.ScanActivity"
             android:exported="false" />
         <activity
             android:name=".InstructionActivity"
@@ -33,13 +43,13 @@
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".view.main.MainActivity"
             android:exported="false" />
         <activity
             android:name=".view.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".view.main.MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScanActivity"
+    tools:context=".view.scan.ScanActivity"
     android:background="@color/soft_green">
 
-    <androidx.camera.view.PreviewView
+    <ImageView
         android:id="@+id/cameraView"
         android:layout_width="match_parent"
         android:layout_height="560dp"
@@ -15,6 +15,28 @@
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/cardview_dark_background"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cameraCaptureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CameraX"
+        app:layout_constraintBottom_toBottomOf="@id/cameraView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/cherrybomb"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraScanButton"
+        android:text="Predict"
+        android:fontFamily="@font/cherrybomb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cameraCaptureButton"
+        app:layout_constraintBottom_toBottomOf="@id/cameraView"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,6 +51,7 @@
         android:fontFamily="@font/cherrybomb"
         android:textColor="@color/white"
         android:textSize="34sp"/>
+
 
     <ImageView
         android:id="@+id/speakerIcon"
