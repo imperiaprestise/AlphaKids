@@ -9,6 +9,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.speech.tts.TextToSpeech
 import android.util.Log
 import androidx.activity.viewModels
 import androidx.camera.core.CameraSelector
@@ -33,13 +34,15 @@ import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-class ScanActivity : AppCompatActivity() {
+class ScanActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
 
     private lateinit var binding: ActivityScanBinding
 
     private val scanViewModel by viewModels<ScanViewModel>(){
         ViewModelFactory.getInstance(this)
     }
+
+    private lateinit var textToSpeech: TextToSpeech
 
     private var currentImageUri: Uri? = null
 
@@ -64,6 +67,17 @@ class ScanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        textToSpeech = TextToSpeech(this, this)
+
+        binding.speakerIcon.setOnClickListener {
+            val detectedText = binding.detectedText.text.toString()
+            if (detectedText.isNotEmpty()){
+                speakText(detectedText)
+            } else{
+                showToast("No text available to speak!")
+            }
+        }
 
         if (!allPermissionsGranted()){
             //request permission
@@ -93,6 +107,17 @@ class ScanActivity : AppCompatActivity() {
             setPredict(it)
         }
 
+    }
+
+    override fun onInit(status: Int) {
+        if (status == TextToSpeech.SUCCESS){
+            val langResult = textToSpeech.setLanguage(Locale.US)
+            if (langResult == TextToSpeech.LANG_MISSING_DATA || langResult == TextToSpeech.LANG_NOT_SUPPORTED){
+                Log.e("ScanActivity", "Language is not supported")
+            }
+        } else {
+            Log.e("ScanActivity", "TextToSpeech initialization failed.")
+        }
     }
 
     private fun scanButton() {
@@ -136,6 +161,16 @@ class ScanActivity : AppCompatActivity() {
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun speakText(text: String){
+        textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        textToSpeech.stop()
+        textToSpeech.shutdown()
     }
 
     companion object{

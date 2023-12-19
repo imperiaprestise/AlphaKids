@@ -1,6 +1,8 @@
 package com.example.alphakids.view
 
+import android.app.Application
 import android.content.Context
+import androidx.annotation.RequiresPermission.Write
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.alphakids.data.PredictRepository
@@ -11,10 +13,11 @@ import com.example.alphakids.view.login.LoginViewModel
 import com.example.alphakids.view.profile.ProfileViewModel
 import com.example.alphakids.view.scan.ScanViewModel
 import com.example.alphakids.view.signup.SignupViewModel
+import com.example.alphakids.view.write.WriteViewModel
 
 class ViewModelFactory(
     private val repository: Repository,
-    private val predictRepository: PredictRepository
+    private val predictRepository: PredictRepository,
 ):
     ViewModelProvider.NewInstanceFactory() {
 
@@ -35,6 +38,9 @@ class ViewModelFactory(
             }
             modelClass.isAssignableFrom(ScanViewModel::class.java) -> {
                 ScanViewModel(predictRepository) as T
+            }
+            modelClass.isAssignableFrom(WriteViewModel::class.java) -> {
+                WriteViewModel(predictRepository) as T
             }
             else -> throw IllegalArgumentException("Unknown viewmodel class" + modelClass.name)
         }

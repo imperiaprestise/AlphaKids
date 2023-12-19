@@ -17,42 +17,18 @@
         android:background="@color/white"/>
 
     <Button
-        android:id="@+id/buttonDetect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Detect"
+        android:text="Mulai Lakukan Scan"
         android:backgroundTint="@color/soft_green"
         android:fontFamily="@font/cherrybomb"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/convertToImage"
         app:layout_constraintTop_toBottomOf="@id/fingerPaintView"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="56dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/speakerIcon"
-        android:text="@string/detected_text"
-        app:layout_constraintTop_toBottomOf="@id/buttonDetect"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="32dp"
-        android:id="@+id/detectedText"
-        android:fontFamily="@font/cherrybomb"
-        android:textColor="@color/soft_green"
-        android:textSize="34sp"/>
-
-    <ImageView
-        android:id="@+id/speakerIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/ic_speaker"
-        android:tint="@color/soft_green"
-        app:layout_constraintStart_toEndOf="@id/detectedText"
-        app:layout_constraintTop_toBottomOf="@id/buttonDetect" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

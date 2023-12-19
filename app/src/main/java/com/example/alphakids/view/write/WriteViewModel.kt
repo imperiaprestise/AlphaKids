@@ -1,4 +1,4 @@
-package com.example.alphakids.view.scan
+package com.example.alphakids.view.write
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -16,7 +16,8 @@ import okhttp3.RequestBody.Companion.asRequestBody
 import retrofit2.HttpException
 import java.io.File
 
-class ScanViewModel (private val predictRepository: PredictRepository) : ViewModel(){
+class WriteViewModel(
+    private val predictRepository: PredictRepository) : ViewModel() {
 
     private val _predictResult = MutableLiveData<PredictResponse>()
     val predictResult: LiveData<PredictResponse> = _predictResult
