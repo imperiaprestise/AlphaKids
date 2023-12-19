@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -73,6 +74,10 @@ class ImageDetectionActivity : AppCompatActivity(), TextToSpeech.OnInitListener 
             setPredict(it)
         }
 
+        writeViewModel.isLoading.observe(this){ isLoading ->
+            showLoading(isLoading)
+        }
+
     }
 
     override fun onInit(status: Int) {
@@ -110,6 +115,10 @@ class ImageDetectionActivity : AppCompatActivity(), TextToSpeech.OnInitListener 
 
     private fun showToast(message: String){
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun showLoading(isLoading: Boolean){
+        binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
 
     override fun onDestroy() {

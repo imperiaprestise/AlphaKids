@@ -1,11 +1,11 @@
-package com.example.alphakids
+package com.example.alphakids.view.books
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.alphakids.view.books.Books
+import com.example.alphakids.R
 
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

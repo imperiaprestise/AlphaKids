@@ -1,6 +1,5 @@
 package com.example.alphakids.di
 
-import android.app.Application
 import android.content.Context
 import com.example.alphakids.data.PredictRepository
 import com.example.alphakids.data.Repository

@@ -1,4 +1,4 @@
-package com.example.alphakids
+package com.example.alphakids.view
 
 import android.content.Intent
 import android.os.Build

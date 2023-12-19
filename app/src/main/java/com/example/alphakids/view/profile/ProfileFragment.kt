@@ -9,19 +9,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.coroutineScope
-import androidx.navigation.Navigation
-import kotlinx.coroutines.flow.collect
 import com.example.alphakids.R
 import com.example.alphakids.data.pref.UserModel
-import com.example.alphakids.data.pref.UserPreference
-import com.example.alphakids.data.pref.dataStore
 import com.example.alphakids.data.util.createCustomDrawable
 import com.example.alphakids.databinding.FragmentProfileBinding
 import com.example.alphakids.view.ViewModelFactory
 import com.example.alphakids.view.help.HelpActivity
 import com.example.alphakids.view.main.MainViewModel
-import kotlinx.coroutines.launch
 
 
 class ProfileFragment : Fragment() {
@@ -92,7 +86,6 @@ class ProfileFragment : Fragment() {
         val intent = Intent(activity, HelpActivity::class.java)
         startActivity(intent)
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

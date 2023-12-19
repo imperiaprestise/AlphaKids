@@ -31,19 +31,19 @@
             android:name=".view.help.HelpActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity"
+            android:name=".view.books.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".view.scan.ScanActivity"
             android:exported="false" />
         <activity
-            android:name=".InstructionActivity"
+            android:name=".view.InstructionActivity"
             android:exported="false" />
         <activity
             android:name=".view.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".view.WelcomeActivity"
             android:exported="false" />
         <activity
             android:name=".view.main.MainActivity"
@@ -52,7 +52,7 @@
             android:name=".view.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".view.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

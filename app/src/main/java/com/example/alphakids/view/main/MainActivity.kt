@@ -13,7 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.alphakids.R
-import com.example.alphakids.WelcomeActivity
+import com.example.alphakids.view.WelcomeActivity
 import com.example.alphakids.databinding.ActivityMainBinding
 import com.example.alphakids.view.ViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_profile
         ).build()
 
-        // Cek null pada ActionBar sebelum mengatur konfigurasi
         val actionBar = supportActionBar
         if (actionBar != null) {
             setupActionBarWithNavController(navController, appBarConfiguration)

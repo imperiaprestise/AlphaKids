@@ -1,9 +1,10 @@
-package com.example.alphakids
+package com.example.alphakids.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.alphakids.R
 
 class SplashScreen : AppCompatActivity() {
     private val splashOut: Long = 3000

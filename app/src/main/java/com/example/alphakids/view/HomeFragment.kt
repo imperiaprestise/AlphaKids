@@ -27,10 +27,6 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    private val loginViewModel by viewModels<LoginViewModel> {
-        ViewModelFactory.getInstance(requireActivity())
-    }
-
     private lateinit var usernameTextView: TextView
 
     override fun onCreateView(
@@ -57,31 +53,26 @@ class HomeFragment : Fragment() {
         val bookDescriptions = resources.getStringArray(R.array.data_deskripsi)
         val bookImages = resources.obtainTypedArray(R.array.data_gambar)
 
-        // Inisialisasi list buku
         val books = ArrayList<Books>()
         for (i in bookNames.indices) {
             val book = Books(bookNames[i], bookDescriptions[i], bookImages.getResourceId(i, -1))
             books.add(book)
         }
 
-        // Inisialisasi RecyclerView dan set adapter
         val recyclerView = binding.rvBook
         recyclerView.layoutManager = GridLayoutManager(activity, 2)
 
-        // Set adapter ke RecyclerView
         recyclerView.adapter = ListBookAdapter(books)
 
-        // Recycle the typed array
         bookImages.recycle()
 
         binding.buttonScan.setOnClickListener {
-            // Navigate to ScanActivity
             navigateToScanActivity()
         }
     }
 
     private fun updateUI(user: UserModel){
-        val greetingMessage = "Hi, ${user.username}" // Gantilah dengan username atau email yang sesuai
+        val greetingMessage = "Hi, ${user.username}"
         usernameTextView.text = greetingMessage    }
 
     private fun navigateToScanActivity() {

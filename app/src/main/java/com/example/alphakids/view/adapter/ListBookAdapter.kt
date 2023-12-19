@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.alphakids.DetailActivity
+import com.example.alphakids.view.books.DetailActivity
 import com.example.alphakids.R
 import com.example.alphakids.view.books.Books
 
