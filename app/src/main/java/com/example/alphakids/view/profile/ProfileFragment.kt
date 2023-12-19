@@ -16,6 +16,8 @@ import com.example.alphakids.databinding.FragmentProfileBinding
 import com.example.alphakids.view.ViewModelFactory
 import com.example.alphakids.view.help.HelpActivity
 import com.example.alphakids.view.main.MainViewModel
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 
 class ProfileFragment : Fragment() {
@@ -71,7 +73,8 @@ class ProfileFragment : Fragment() {
 
         usernameTextView.text = user.username
         emailTextView.text = user.email
-        joinedTextView.text = user.dateJoined
+        val formattedDate = formatDate(user.dateJoined)
+        joinedTextView.text = formattedDate
         emaillTextView.text = user.email
 
         try {
@@ -81,6 +84,14 @@ class ProfileFragment : Fragment() {
             e.printStackTrace()
         }
     }
+
+    private fun formatDate(dateString: String): String {
+        val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
+        val outputFormat = SimpleDateFormat("d MMMM yyyy", Locale("id", "ID"))
+        val date = inputFormat.parse(dateString)
+        return outputFormat.format(date)
+    }
+
 
     private fun navigateToHelpActivity(){
         val intent = Intent(activity, HelpActivity::class.java)
