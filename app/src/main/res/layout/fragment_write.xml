@@ -19,7 +19,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mulai Lakukan Scan"
+        android:text="@string/mulai_lakukan_scan"
         android:backgroundTint="@color/soft_green"
         android:fontFamily="@font/cherrybomb"
         android:layout_marginStart="32dp"

@@ -19,6 +19,7 @@ import com.example.alphakids.databinding.FragmentHomeBinding
 import com.example.alphakids.view.adapter.ListBookAdapter
 import com.example.alphakids.view.books.Books
 import com.example.alphakids.view.login.LoginViewModel
+import com.example.alphakids.view.main.MainViewModel
 import kotlinx.coroutines.launch
 
 
@@ -28,6 +29,10 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var usernameTextView: TextView
+
+    private val viewModel: MainViewModel by viewModels{
+        ViewModelFactory.getInstance(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

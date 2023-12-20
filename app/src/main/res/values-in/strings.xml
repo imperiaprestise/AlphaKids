@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AlphaKids</string>
+    <string name="text_welcome">Selamat datang di AlphaKids! </string>
+    <string name="text_deskripsi_welcome">Temukan, Belajar, dan Berkembang dengan Komunitas Pendukung Kami.</string>
+    <string name="login">Masuk</string>
+    <string name="logout">Keluar</string>
+    <string name="signup">Daftar</string>
+    <string name="ready">Siap belajar bersama kami?</string>
+    <string name="enter">Masukkan data Anda terlebih dahulu!</string>
+    <string name="email">Email</string>
+    <string name="password">Kata sandi</string>
+    <string name="name">Nama pengguna</string>
+    <string name="complete">Lengkapi data Anda di bawah ini</string>
+    <string name="welcome_to">Selamat datang di</string>
+    <string name="instruction">Petunjuk penggunaan</string>
+    <string name="text_instruction">Untuk menggunakan aplikasi ini, cukup tekan "Mulai Pindai", lalu arahkan kamera ke gambar yang hurufnya ingin Anda deteksi</string>    <string name="start">Start</string>
+    <string name="lets">Ayo belajar lagi!</string>
+    <string name="read">Ayo baca lagi!</string>
+    <string name="scan">Mulai Pindai Huruf Anda!</string>
+    <string name="readBook">Baca</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_write">Tulis</string>
+    <string name="title_book">Buku</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_alphabet">Alfabet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="detected_text">Text Terdeteksi</string>
+
+    <string name="book_name">Buku Cerita Anak</string>
+    <string name="description">Deskripsi</string>
+    <string name="help">Bantuan</string>
+    <string name="language">Pengaturan Bahasa</string>
+    <string name="perlu_bantuan">Butuh bantuan atau ada masalah?</string>
+    <string name="joined_date">Tanggal Bergabung</string>
+    <string name="login_berhasil">Berhasil masuk. Selamat datang di halaman beranda!</string>
+    <string name="login_failed">Gagal masuk. Silakan coba lagi!</string>
+    <string name="incomplete">Data tidak lengkap</string>
+    <string name="sucsess">Akun berhasil dibuat.</string>
+    <string name="signup_failed">Pendaftaran gagal. Silakan coba lagi!</string>
+    <string name="mulai_lakukan_scan">Mulai Deteksi</string>
+
+    <string-array name="data_book">
+        <item>Kalah Oleh Si Cerdik</item>
+        <item>5 Dongeng Anak Dunia</item>
+        <item>Si Gagak dan Elang yang Jahil</item>
+        <item>Kesederhanaan Semut</item>
+        <item>Si Kelinci yang Sombong dan Kura-Kura</item>
+        <item>Kisah Putri yang ingar kepada sang Kakak</item>
+        <item>Anak Penggembala dan Serigalaa</item>
+        <item>Si Kura-Kura yang Sombong</item>
+    </string-array>
+
+    <string-array name="data_deskripsi">
+        <item>Di sebuah hutan ada sumber air yang tidak pernah kering. Airnya jernih dan mengalir ke sebuah telaga. Semua binatang yang menjadi
+            warga di hutan itu minum dari sumber air sama. Setiap golongan binatang sudah mempunyai jadwal tidak tertulis untuk bergiliran minum.
+        Pada saat itu kebetulan musim kemarau. Semua binatang merasa sangat haus, tetapi tidak ada yang berani minum di luar jadwalnya.
+        Semua binatang taat pada aturan.Pada Suatu pagi yang cerah banyak binatang menuju sumber air. Sesampainya di pinggir telaga mereka tidak mau turun. Airnya
+        kotor karena digunakan untuk berkubang oleh seekor badak</item>
+
+        <item>Di daerah perbukitan Pulau Jawa, terdapat kumpulan tupai pemakan buah kelapa. Para tupai jantan memiliki kegemaran unik yaitu meloncat dari ranting pohon ke
+            ranting pohon lainnya. Sementara para tupai betina lebih suka merayap. Mereka tidak berani untuk meloncat. Tetapi berbeda dengan Tuah, tupai betina si pantang menyerah. Dia ingin
+        sekali dapat meloncat. Oleh karena itu, Tuah mendatangi Eyang Tupai. Beliau adalah pelatih yang selama ini mengajari para tupai jantan meloncat.
+        “Eyang, jadikanlah aku muridmu seperti para tupai jantan itu,” pinta Tuah. “Kamu perempuan, sudahlah tidak perlu kamu susah payah berlatih loncat padaku,” jawab Eyang Tupai. </item>
+
+        <item>Di hutan yang riuh, tinggalah dua sahabat, Si Gagak dan Elang. Mereka dikenal karena kejahilan mereka yang tak terduga. Suatu pagi, Gagak ingin memberi kejutan pada Elang. Dengan berani,
+            Gagak memenuhi sarang Elang dengan suara gemuruh mengerikan. Elang terbangun kaget, tapi keduanya tertawa bersama. Tidak mau kalah, Elang merencanakan kejutan balasannya. Beberapa hari kemudian,
+            Elang mencubit lembut ekor Gagak. Gagak terbang ke udara, dan mereka tertawa bersama lagi. Mereka menyadari bahwa kejahilan kecil membuat hidup lebih ceria. Si Gagak dan Elang yang jahil tetap
+            menjadi sahabat penuh tawa di hutan itu.</item>
+
+        <item>Di hutan, semut bijak hidup dengan sederhana. Meski mendengar tentang perburuan makanan besar-besaran, mereka tetap setia pada prinsip kesederhanaan. Berkumpul di sekitar makanan kecil, mereka
+            merasa bahagia dan saling berbagi dengan tulus. Berita tentang kesederhanaan mereka menyebar, mengajar hewan lain bahwa kebahagiaan sejati tak terletak pada kekayaan. Semut bijak membawa kedamaian
+            dan kebahagiaan ke hutan, mengajarkan bahwa hidup berkelimpahan bukan hanya tentang hal besar, tetapi juga menghargai setiap momen kecil dan sederhana.</item>
+
+        <item>Pada suatu hari disebuah hutan, Kelinci yang merasa Kura-Kura sangat lambat mengajaknya balap lari untuk membuktikan kehebatan Kelinci dalam berlari. Kura-kura yang rendah hati menyambut
+            gembira ajakan Kancil. Keduanya pun mempersiapkan balap lari mereka ditemani dengan para hewan lain di hutan.Kelinci yang merasa hebat pun berhasil lari lebih dulu dibanding Kura-Kura yang berjalan
+            amat lambat. Saat mendekati garis finish, Kelinci memutuskan untuk beristirahat di bawah pohon yang rindang. Kelinci yakin, Kura-kura pasti masih lama jadi ia memutuskan untuk tertidur sebentar
+            hingga tak menyadari ia sampai larut dalam tidurnya dan membuat Kura-Kura telah lebih dulu sampai lebih di garis finish.".</item>
+
+        <item>Seorang Putri kerajaan yang memesona tengah asik bermain bola di pinggir sungai. Tanpa sengaja, ia menjatuhkan bola kesayangannya hingga masuk ke sungai. Putri sedih karena tak bisa mengambil bola
+            ke sungai yang sangat dalam itu.Disaat tengah bersedih, seekor Katak muncul ke permukaan dan memnayakan apa yang membuat Putri sedih. Sang Putri kemudian menceritakan apa yang terjadi pada Katak dan
+            berjanji akan melakukan apa saja apabila bolanya kembali.Katak membantu Putri dengan mengambil bola tadi ke dasar sungai yang dalam. Setelah berhasil mendapatkan bolanya kembali, Putri memilih pergi
+            dan meninggalkan Katak. Sampai pada suatu malam, Katak mendatangi istana untuk menagih janji Putri dan Putri pun terpaksa menepati janjinya pada Katak. Kemudian di malam ketiga, Katak yang buruk
+            rupa berubah menjadi sosok pangeran yang mengejutkan Putri. Katak pun menjelaskan kronologi kejadian yang menimpanya, "Aku dikutuk oleh penyihir jahat menjadi seekor katak. Beruntung, aku bertemu denganmu
+            yang menjadi syarat untuk melepaskan kutukan penyihir jahat itu," cerita pangeran.Singkat cerita, pangeran kemudian mengajak Putri pulang ke istana milik sang orangtuanya. Keduanya pun memutuskan menikah
+            disana dan hidup bahagia.</item>
+
+        <item>Hidup seorang anak gembala yang bekerja pada saudagar kaya. Dia bertugas untuk merawat domba majikannya dan meminta tolong warga jika ada serigala yang mendekati domba. Bosan dengan rutinitasnya
+            menggembala domba, anak gembala tiba-tiba berteriak, “Tolong! Ada serigala di sini!” Sontak, warga desa pun segera menghampiri dan menolong, tetapi mereka kesal karena anak gembala hanya bercanda.
+            Senang dengan reaksi warga, anak gembala pun terus-menerus menipu warga dengan mengatakan ada serigala datang. Sampai suatu sore hari, datanglah segerombolan serigala yang mendekati domba dan anak
+            gembala. Ketakutan, anak gembala pun berteriak minta-tolong, tetapi tidak ada warga yang menjawab karena mereka sudah tidak percaya. Akhirnya si anak gembala menyesal dan tidak lagi mengulangi perbuatannya.
+        </item>
+
+        <item>Seekor kura-kura sombong merasa dirinya lebih pantas terbang dibanding berenang dan jengkel karena tempurungnya yang berat. Dia pun selalu kesal ketika melihat burung-burung yang terbang bebas di
+            langit. Suatu hari, kura-kura memaksa seekor angsa untuk membantunya terbang dan si angsa mengusulkan kura-kura berpegangan pada sebatang kayu. Batang kayu tersebut pun kemudian diangkat oleh angsa
+            dan dibawa terbang. Sayangnya, genggaman tangan kura-kura melemah dan dia jatuh dengan keras. Untungnya kura-kura selamat karena keberadaan tempurung yang paling ia benci. Pelajaran dari dongeng pendek
+            untuk anak SD ini adalah selalu bersyukur dengan apa yang kita miliki.
+        </item>
+    </string-array>
+
+    <integer-array name="data_gambar">
+        <item>@drawable/img_1</item>
+        <item>@drawable/img_2</item>
+        <item>@drawable/bukudongen</item>
+        <item>@drawable/dongeng</item>
+        <item>@drawable/dongeng_kisah_kelinci</item>
+        <item>@drawable/dongeng_kisah_putri</item>
+        <item>@drawable/dongeng_anak_penggembala</item>
+        <item>@drawable/dongeng_kura_kura</item>
+    </integer-array>
+
+</resources>

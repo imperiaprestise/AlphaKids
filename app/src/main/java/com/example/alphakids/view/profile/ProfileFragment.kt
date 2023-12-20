@@ -2,12 +2,14 @@ package com.example.alphakids.view.profile
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.example.alphakids.R
 import com.example.alphakids.data.pref.UserModel
@@ -16,6 +18,7 @@ import com.example.alphakids.databinding.FragmentProfileBinding
 import com.example.alphakids.view.ViewModelFactory
 import com.example.alphakids.view.help.HelpActivity
 import com.example.alphakids.view.main.MainViewModel
+import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -28,10 +31,16 @@ class ProfileFragment : Fragment() {
     private lateinit var usernameTextView: TextView
     private lateinit var emailTextView: TextView
     private lateinit var logoutButton: Button
-    private lateinit var mainViewModel: MainViewModel
     private lateinit var joinedTextView: TextView
-    private lateinit var profileViewModel: ProfileViewModel
     private lateinit var emaillTextView: TextView
+
+    private val mainViewModel: MainViewModel by viewModels{
+        ViewModelFactory.getInstance(requireContext())
+    }
+
+    private val profileViewModel : ProfileViewModel by viewModels{
+        ViewModelFactory.getInstance(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,14 +59,10 @@ class ProfileFragment : Fragment() {
         logoutButton = view.findViewById(R.id.logoutButton)
         emaillTextView = view.findViewById(R.id.tv_detailemail)
 
-        mainViewModel = ViewModelProvider(this, ViewModelFactory.getInstance(requireActivity()))
-            .get(MainViewModel::class.java)
-
-        profileViewModel = ViewModelProvider(this, ViewModelFactory.getInstance(requireActivity()))
-            .get(ProfileViewModel::class.java)
-
         profileViewModel.getUserData().observe(viewLifecycleOwner) { user ->
-            updateUI(user)
+            user?.let {
+                updateUI(user)
+            }
         }
 
         logoutButton.setOnClickListener {
@@ -67,30 +72,41 @@ class ProfileFragment : Fragment() {
         binding.bantuanButton.setOnClickListener {
             navigateToHelpActivity()
         }
+
+        binding.buttonLanguage.setOnClickListener {
+            startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
+        }
     }
 
     private fun updateUI(user: UserModel) {
 
         usernameTextView.text = user.username
         emailTextView.text = user.email
-        val formattedDate = formatDate(user.dateJoined)
-        joinedTextView.text = formattedDate
-        emaillTextView.text = user.email
+        emaillTextView?.let {
+            it.text = user.email
+        }
 
         try {
+            val formattedDate = formatDate(user.dateJoined)
+            joinedTextView.text = formattedDate
             val drawable = createCustomDrawable(requireContext(), user.username.first().uppercaseChar())
             binding?.ivProfile?.setImageDrawable(drawable)
-        } catch (e: Exception) {
+        } catch (e: ParseException) {
             e.printStackTrace()
         }
     }
 
     private fun formatDate(dateString: String): String {
-        val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
-        val outputFormat = SimpleDateFormat("d MMMM yyyy", Locale("id", "ID"))
-        val date = inputFormat.parse(dateString)
-        return outputFormat.format(date)
+        if (dateString.isNotEmpty()) {
+            val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
+            val outputFormat = SimpleDateFormat("d MMMM yyyy", Locale("id", "ID"))
+            val date = inputFormat.parse(dateString)
+            return outputFormat.format(date)
+        } else {
+            return ""
+        }
     }
+
 
 
     private fun navigateToHelpActivity(){

@@ -68,7 +68,7 @@ class SignUpActivity : AppCompatActivity() {
             val password = binding.passwordEditText.text.toString()
 
             if (username.isEmpty() || email.isEmpty() || password.isEmpty()){
-                setMessage(this@SignUpActivity, "incomplete data")
+                setMessage(this@SignUpActivity, getString(R.string.incomplete))
             } else {
                 lifecycle.coroutineScope.launch {
                     try {
@@ -114,7 +114,7 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun showUserCreated(isSuccess: Boolean, response: RegisterResponse?){
         val title = if (isSuccess) "Yeah!" else "Oops!"
-        val message = if (isSuccess) "Akun berhasil dibuat." else response?.message ?: "Signup gagal. Silahkan coba lagi."
+        val message = if (isSuccess) getString(R.string.sucsess) else response?.message ?: getString(R.string.signup_failed)
 
         AlertDialog.Builder(this).apply {
             setTitle(title)

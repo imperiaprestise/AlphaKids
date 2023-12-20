@@ -11,6 +11,10 @@
         android:icon="@drawable/baseline_create_24"
         android:title="@string/title_write" />
     <item
+        android:id="@+id/navigation_alphabet"
+        android:icon="@drawable/baseline_play_circle_outline_24"
+        android:title="@string/title_alphabet"/>
+    <item
         android:id="@+id/navigation_book"
         android:icon="@drawable/baseline_menu_book_24"
         android:title="@string/title_book" />

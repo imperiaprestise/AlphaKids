@@ -3,6 +3,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFA620</color>
     <color name="grey">#888888</color>
+    <color name="pink_ink">#E91E63</color>
+    <color name="blue">#07487C</color>
+    <color name="purple">#9B02B5</color>
     <color name="soft_green">#0C9390</color>
     <color name="shrine_theme_light_onSurfaceVariant">#3DE7E3</color>
 

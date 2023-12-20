@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_joined"
-        android:text="Joined Date"
+        android:text="@string/joined_date"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:textSize="17sp"
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_emaill"
-        android:text="Email"
+        android:text="@string/email"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:textSize="17sp"
@@ -112,7 +112,7 @@
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/primary"
         android:text="@string/help"
@@ -122,17 +122,31 @@
         android:fontFamily="@font/cherrybomb"/>
 
     <Button
+        android:id="@+id/buttonLanguage"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/primary"
+        android:text="@string/language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bantuanButton"
+        android:fontFamily="@font/cherrybomb"/>
+
+    <Button
         android:id="@+id/logoutButton"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/soft_green"
         android:text="@string/logout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bantuanButton"
+        app:layout_constraintTop_toBottomOf="@id/buttonLanguage"
         android:fontFamily="@font/cherrybomb"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

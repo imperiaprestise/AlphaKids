@@ -20,6 +20,13 @@
         />
 
     <fragment
+        android:id="@+id/navigation_alphabet"
+        android:name="com.example.alphakids.view.alphabet.AlphabetFragment"
+        android:label="@string/title_alphabet"
+        tools:layout="@layout/fragment_alphabet"
+        />
+
+    <fragment
         android:id="@+id/navigation_book"
         android:name="com.example.alphakids.view.books.BookFragment"
         android:label="@string/title_book"

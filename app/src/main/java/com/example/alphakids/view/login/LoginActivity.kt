@@ -115,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showUserCreated(isSuccess: Boolean, response: LoginResponsee?) {
         val title = if (isSuccess) "Yeah!" else "Oops!"
-        val message = if (isSuccess) "Login berhasil. Selamat datang di halaman utama." else response?.message ?: "Login gagal. Silahkan coba lagi."
+        val message = if (isSuccess) getString(R.string.login_berhasil) else response?.message ?: getString(R.string.login_failed)
 
         AlertDialog.Builder(this).apply {
             setTitle(title)

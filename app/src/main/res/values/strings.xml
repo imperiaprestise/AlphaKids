@@ -17,64 +17,72 @@
     <string name="start">Start</string>
     <string name="lets">Let’s learn again!</string>
     <string name="read">Let’s read again!</string>
-    <string name="scan">Start Scan Your Letter</string>
+    <string name="scan">Start Scan Your Letter!</string>
     <string name="readBook">Read</string>
     <string name="title_home">Home</string>
     <string name="title_write">Write</string>
     <string name="title_book">Book</string>
     <string name="title_profile">Profile</string>
+    <string name="title_alphabet">Alphabet</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="detected_text">Detected Text</string>
 
-    <string name="book_name">Buku Cerita Anak</string>
-    <string name="description">Deskripsi</string>
+    <string name="book_name">Children\'s Story Books</string>
+    <string name="description">Description</string>
     <string name="help">Help</string>
-    <string name="perlu_bantuan">Perlu Bantuan atau Ada masalah?</string>
+    <string name="language">Language Setting</string>
+    <string name="perlu_bantuan">Need help or have a problem?</string>
+    <string name="joined_date">Joined Date</string>
+    <string name="login_berhasil">Login successfully. Welcome to the home page!</string>
+    <string name="login_failed">Login failed. Please try again!</string>
+    <string name="incomplete">Incomplete data</string>
+    <string name="sucsess">Account created successfully.</string>
+    <string name="signup_failed">Sign up failed. Please try again!</string>
+    <string name="mulai_lakukan_scan">Start Detect</string>
 
     <string-array name="data_book">
-        <item>Kalah Oleh Si Cerdik</item>
-        <item>5 Dongeng Anak Dunia</item>
-        <item>Si Gagak dan Elang yang Jahil</item>
-        <item>Kesederhanaan Semut</item>
-        <item>Si Kelinci yang Sombong dan Kura-Kura</item>
-        <item>Kisah Putri yang ingar kepada sang Kakak</item>
-        <item>Anak Penggembala dan Serigalaa</item>
-        <item>Si Kura-Kura yang Sombong</item>
+        <item>Losed by the Clever</item>
+        <item>The squirrel never gives up</item>
+        <item>The Mischievous Crow and Eagle</item>
+        <item>Ant Simplicity</item>
+        <item>The Arrogant Rabbit and the Turtle</item>
+        <item>The story of the daughter who remembered her brother</item>
+        <item>a son of herdsman and Wolf</item>
+        <item>The Arrogant Turtle</item>
     </string-array>
 
     <string-array name="data_deskripsi">
-        <item>Di sebuah hutan ada sumber air yang tidak pernah kering. Airnya jernih dan mengalir ke sebuah telaga. Semua binatang yang menjadi
-            warga di hutan itu minum dari sumber air sama. Setiap golongan binatang sudah mempunyai jadwal tidak tertulis untuk bergiliran minum.
-        Pada saat itu kebetulan musim kemarau. Semua binatang merasa sangat haus, tetapi tidak ada yang berani minum di luar jadwalnya.
-        Semua binatang taat pada aturan.Pada Suatu pagi yang cerah banyak binatang menuju sumber air. Sesampainya di pinggir telaga mereka tidak mau turun. Airnya
-        kotor karena digunakan untuk berkubang oleh seekor badak</item>
+        <item>In a forest there is a water source that never dries up. The water is clear and flows into a lake. All the animals that become
+            residents in the forest drink from the same water source. Each group of animals has an unwritten schedule for taking turns drinking.
+        At that time it happened to be the dry season. All the animals felt very thirsty, but no one dared to drink outside their schedule.
+        All animals obeyed the rules. One sunny morning many animals went to the water source. When they arrived at the edge of the lake they didnt want to go down. The water
+        dirty because it was used for wallowing by a rhino</item>
 
-        <item>Di daerah perbukitan Pulau Jawa, terdapat kumpulan tupai pemakan buah kelapa. Para tupai jantan memiliki kegemaran unik yaitu meloncat dari ranting pohon ke
-            ranting pohon lainnya. Sementara para tupai betina lebih suka merayap. Mereka tidak berani untuk meloncat. Tetapi berbeda dengan Tuah, tupai betina si pantang menyerah. Dia ingin
-        sekali dapat meloncat. Oleh karena itu, Tuah mendatangi Eyang Tupai. Beliau adalah pelatih yang selama ini mengajari para tupai jantan meloncat.
-        “Eyang, jadikanlah aku muridmu seperti para tupai jantan itu,” pinta Tuah. “Kamu perempuan, sudahlah tidak perlu kamu susah payah berlatih loncat padaku,” jawab Eyang Tupai. </item>
-
+        <item>In the hilly areas of Java Island, there are groups of squirrels that eat coconuts. Male squirrels have a unique hobby, namely jumping from tree branches to branches
+            other tree branches. Meanwhile, female squirrels prefer to crawl. They didnt dare to jump. But unlike Tuah, the female squirrel never gives up. He wants
+        once you can jump. Therefore, Tuah came to Grandmother Tupai. He is the trainer who has been teaching male squirrels to jump.
+        "Grandmother, make me your student like those male squirrels," asked Tuah. "Youre a girl, you dont need to bother practicing jumping on me," replied Grandmother Tupai. </item>
         <item>Di hutan yang riuh, tinggalah dua sahabat, Si Gagak dan Elang. Mereka dikenal karena kejahilan mereka yang tak terduga. Suatu pagi, Gagak ingin memberi kejutan pada Elang. Dengan berani,
             Gagak memenuhi sarang Elang dengan suara gemuruh mengerikan. Elang terbangun kaget, tapi keduanya tertawa bersama. Tidak mau kalah, Elang merencanakan kejutan balasannya. Beberapa hari kemudian,
             Elang mencubit lembut ekor Gagak. Gagak terbang ke udara, dan mereka tertawa bersama lagi. Mereka menyadari bahwa kejahilan kecil membuat hidup lebih ceria. Si Gagak dan Elang yang jahil tetap
             menjadi sahabat penuh tawa di hutan itu.</item>
 
-        <item>Di hutan, semut bijak hidup dengan sederhana. Meski mendengar tentang perburuan makanan besar-besaran, mereka tetap setia pada prinsip kesederhanaan. Berkumpul di sekitar makanan kecil, mereka
-            merasa bahagia dan saling berbagi dengan tulus. Berita tentang kesederhanaan mereka menyebar, mengajar hewan lain bahwa kebahagiaan sejati tak terletak pada kekayaan. Semut bijak membawa kedamaian
-            dan kebahagiaan ke hutan, mengajarkan bahwa hidup berkelimpahan bukan hanya tentang hal besar, tetapi juga menghargai setiap momen kecil dan sederhana.</item>
+        <item>In the forest, wise ants live simply. Despite hearing about massive hunting for food, they remained loyal to the principle of simplicity. Gathering around snacks, they are
+            feel happy and share with each other sincerely. Word of their simplicity spreads, teaching other animals that true happiness does not lie in wealth. Wise ants bring peace
+            and happiness to the forest, teaching that living abundantly is not just about big things, but also appreciating every small and simple moment.</item>
 
-        <item>Pada suatu hari disebuah hutan, Kelinci yang merasa Kura-Kura sangat lambat mengajaknya balap lari untuk membuktikan kehebatan Kelinci dalam berlari. Kura-kura yang rendah hati menyambut
-            gembira ajakan Kancil. Keduanya pun mempersiapkan balap lari mereka ditemani dengan para hewan lain di hutan.Kelinci yang merasa hebat pun berhasil lari lebih dulu dibanding Kura-Kura yang berjalan
-            amat lambat. Saat mendekati garis finish, Kelinci memutuskan untuk beristirahat di bawah pohon yang rindang. Kelinci yakin, Kura-kura pasti masih lama jadi ia memutuskan untuk tertidur sebentar
-            hingga tak menyadari ia sampai larut dalam tidurnya dan membuat Kura-Kura telah lebih dulu sampai lebih di garis finish.".</item>
+        <item>One day in a forest, the Rabbit, who felt that the Turtle was very slow, invited him to run a race to prove the Rabbits prowess in running. The humble turtle welcomed
+            happy with Kancils invitation. The two of them were preparing for their running race accompanied by other animals in the forest. The rabbit, who felt great, managed to run ahead of the turtle who was walking.
+            very slow. As he neared the finish line, Bunny decided to rest under a shady tree. The Rabbit was sure that the Tortoise would still be a long time away so he decided to sleep for a while
+            until he didnt realize he was late in his sleep and made the Turtles reach the finish line first.".</item>
 
-        <item>Seorang Putri kerajaan yang memesona tengah asik bermain bola di pinggir sungai. Tanpa sengaja, ia menjatuhkan bola kesayangannya hingga masuk ke sungai. Putri sedih karena tak bisa mengambil bola
-            ke sungai yang sangat dalam itu.Disaat tengah bersedih, seekor Katak muncul ke permukaan dan memnayakan apa yang membuat Putri sedih. Sang Putri kemudian menceritakan apa yang terjadi pada Katak dan
-            berjanji akan melakukan apa saja apabila bolanya kembali.Katak membantu Putri dengan mengambil bola tadi ke dasar sungai yang dalam. Setelah berhasil mendapatkan bolanya kembali, Putri memilih pergi
-            dan meninggalkan Katak. Sampai pada suatu malam, Katak mendatangi istana untuk menagih janji Putri dan Putri pun terpaksa menepati janjinya pada Katak. Kemudian di malam ketiga, Katak yang buruk
-            rupa berubah menjadi sosok pangeran yang mengejutkan Putri. Katak pun menjelaskan kronologi kejadian yang menimpanya, "Aku dikutuk oleh penyihir jahat menjadi seekor katak. Beruntung, aku bertemu denganmu
-            yang menjadi syarat untuk melepaskan kutukan penyihir jahat itu," cerita pangeran.Singkat cerita, pangeran kemudian mengajak Putri pulang ke istana milik sang orangtuanya. Keduanya pun memutuskan menikah
-            disana dan hidup bahagia.</item>
+        <item>A charming royal princess was having fun playing ball on the river bank. Accidentally, he dropped his favorite ball into the river. Putri was sad because she couldnt take the ball
+            into a very deep river. While he was sad, a frog appeared on the surface and asked what made Putri sad. The Princess then told what happened to Frog and
+            promised to do anything if the ball came back. Frog helped Putri by taking the ball to the bottom of the deep river. After successfully getting the ball back, Putri chose to leave
+            and left Frog. Until one night, Frog came to the palace to ask for Princess promise and Princess was forced to keep her promise to Frog. Then on the third night, Bad Frog
+            His appearance changed into the figure of a prince which surprised the Princess. The frog explained the chronology of what happened to him, "I was cursed by an evil witch to become a frog. Luckily, I met you
+            which is a condition for releasing the evil witchs curse," said the prince. Long story short, the prince then took Putri back to her parents palace. The two of them decided to get married
+            there and live happily.</item>
 
         <item>Hidup seorang anak gembala yang bekerja pada saudagar kaya. Dia bertugas untuk merawat domba majikannya dan meminta tolong warga jika ada serigala yang mendekati domba. Bosan dengan rutinitasnya
             menggembala domba, anak gembala tiba-tiba berteriak, “Tolong! Ada serigala di sini!” Sontak, warga desa pun segera menghampiri dan menolong, tetapi mereka kesal karena anak gembala hanya bercanda.
@@ -82,10 +90,10 @@
             gembala. Ketakutan, anak gembala pun berteriak minta-tolong, tetapi tidak ada warga yang menjawab karena mereka sudah tidak percaya. Akhirnya si anak gembala menyesal dan tidak lagi mengulangi perbuatannya.
         </item>
 
-        <item>Seekor kura-kura sombong merasa dirinya lebih pantas terbang dibanding berenang dan jengkel karena tempurungnya yang berat. Dia pun selalu kesal ketika melihat burung-burung yang terbang bebas di
-            langit. Suatu hari, kura-kura memaksa seekor angsa untuk membantunya terbang dan si angsa mengusulkan kura-kura berpegangan pada sebatang kayu. Batang kayu tersebut pun kemudian diangkat oleh angsa
-            dan dibawa terbang. Sayangnya, genggaman tangan kura-kura melemah dan dia jatuh dengan keras. Untungnya kura-kura selamat karena keberadaan tempurung yang paling ia benci. Pelajaran dari dongeng pendek
-            untuk anak SD ini adalah selalu bersyukur dengan apa yang kita miliki.
+        <item>An arrogant turtle felt he was better suited to flying than swimming and was irritated by his heavy shell. He was always annoyed when he saw birds flying freely
+            sky. One day, the tortoise forced a goose to help him fly and the goose suggested that the tortoise hold on to a piece of wood. The log was then lifted by the goose
+            and taken to flight. Unfortunately, the turtles grip weakened and he fell heavily. Luckily the turtle survived because of the shell which he hated the most. Lessons from short fairy tales
+            for elementary school children, this is to always be grateful for what we have.
         </item>
     </string-array>
 
@@ -99,4 +107,5 @@
         <item>@drawable/dongeng_anak_penggembala</item>
         <item>@drawable/dongeng_kura_kura</item>
     </integer-array>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

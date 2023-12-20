@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.alphabet.AlphabetFragment"
+    android:background="@drawable/background_app">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cherrybomb"
+        android:textColor="@color/soft_green"
+        android:textSize="24sp"
+        android:text="@string/title_alphabet"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/tv_alphabet_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aa"
+            android:id="@+id/tv_a"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/soft_green"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bb"
+            android:id="@+id/tv_b"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/yellow"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cc"
+            android:id="@+id/tv_c"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dd"
+            android:id="@+id/tv_d"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/pink_ink"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ee"
+            android:id="@+id/tv_e"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/secondary"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ff"
+            android:id="@+id/tv_f"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gg"
+            android:id="@+id/tv_g"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_alphabet_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_alphabet_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hh"
+            android:id="@+id/tv_h"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/pink_ink"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ii"
+            android:id="@+id/tv_i"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/secondary"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jj"
+            android:id="@+id/tv_j"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kk"
+            android:id="@+id/tv_k"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ll"
+            android:id="@+id/tv_l"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/yellow"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mm"
+            android:id="@+id/tv_m"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/pink_ink"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nn"
+            android:id="@+id/tv_n"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/soft_green"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_alphabet_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_alphabet_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oo"
+            android:id="@+id/tv_o"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pp"
+            android:id="@+id/tv_p"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/pink_ink"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qq"
+            android:id="@+id/tv_q"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/secondary"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rr"
+            android:id="@+id/tv_r"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/yellow"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ss"
+            android:id="@+id/tv_s"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tt"
+            android:id="@+id/tv_t"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/soft_green"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uu"
+            android:id="@+id/tv_u"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/yellow"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_alphabet_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_alphabet_3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vv"
+            android:id="@+id/tv_v"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ww"
+            android:id="@+id/tv_w"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xx"
+            android:id="@+id/tv_x"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/yellow"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yy"
+            android:id="@+id/tv_y"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/secondary"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zz"
+            android:id="@+id/tv_z"
+            android:fontFamily="@font/cherrybomb"
+            android:textColor="@color/soft_green"
+            android:textSize="28sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="12dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
