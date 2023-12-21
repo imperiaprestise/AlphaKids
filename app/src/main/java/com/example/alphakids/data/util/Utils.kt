@@ -22,14 +22,14 @@ private const val FILENAME_FORMAT = "yyyyMMdd_HHmmss"
 private val timeStamp: String = SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(Date())
 private const val MAXIMAL_SIZE = 1000000
 
-fun createCustomDrawable(context: Context, char: Char): Drawable {
-    val mBitmap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888)
+fun createCustomDrawable(context: Context, char: Char, size: Int): Drawable {
+    val mBitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
     val mCanvas = Canvas(mBitmap)
     val titlePaint = Paint(Paint.FAKE_BOLD_TEXT_FLAG)
 
     mCanvas.drawColor(ContextCompat.getColor(context, R.color.yellow))
     titlePaint.apply {
-        textSize = 50f
+        textSize = size / 2f
         color = ContextCompat.getColor(context, R.color.white)
         textAlign = Paint.Align.CENTER
     }

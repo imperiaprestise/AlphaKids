@@ -27,25 +27,19 @@ class SplashScreen : AppCompatActivity() {
 
         var intent: Intent? = null
 
-        viewModel.getSession().observe(this) { user ->
-            val destinationClass = if (user.isLogin) {
-                MainActivity::class.java
+        viewModel.getSession().observe(this) {
+            intent = if (it.isLogin){
+                Intent(this, MainActivity::class.java)
             } else {
-                WelcomeActivity::class.java
+                Intent(this, WelcomeActivity::class.java)
             }
-
-            val intent = Intent(this, destinationClass)
-            startActivityForResult(intent, REQUEST_CODE)
         }
-    }
 
-    private val REQUEST_CODE = 123 // You can use any unique request code
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_CODE) {
-            // Handle the result if needed
+        Handler().postDelayed({
+            startActivity(intent)
             finish()
-        }
+        }, 3000)
     }
+
+
 }

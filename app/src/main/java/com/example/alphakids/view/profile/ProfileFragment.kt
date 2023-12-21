@@ -80,17 +80,25 @@ class ProfileFragment : Fragment() {
 
     private fun updateUI(user: UserModel) {
 
-        usernameTextView.text = user.username
-        emailTextView.text = user.email
+        usernameTextView.text = user.username ?: "Username not available"
+        emailTextView.text = user.email ?: "Email not available"
         emaillTextView?.let {
             it.text = user.email
         }
 
+        if (user.username.isNullOrEmpty()) {
+            return
+        }
+
+        val drawable = createCustomDrawable(requireContext(), user.username.first().uppercaseChar(), 100)
+        binding?.ivProfile?.let {
+            it.setImageDrawable(drawable)
+        }
+
+
         try {
             val formattedDate = formatDate(user.dateJoined)
             joinedTextView.text = formattedDate
-            val drawable = createCustomDrawable(requireContext(), user.username.first().uppercaseChar())
-            binding?.ivProfile?.setImageDrawable(drawable)
         } catch (e: ParseException) {
             e.printStackTrace()
         }

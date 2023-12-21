@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowManager
@@ -15,6 +16,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.alphakids.R
 import com.example.alphakids.view.WelcomeActivity
 import com.example.alphakids.databinding.ActivityMainBinding
+import com.example.alphakids.view.SplashScreen
 import com.example.alphakids.view.ViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
